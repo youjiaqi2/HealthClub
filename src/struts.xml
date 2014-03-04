@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="struts2" extends="struts-default">
+		<!-- system-->
+		<action name="SystemLogin" class="SystemLoginAction">
+			<result name="manager">/system/Manager.jsp</result>
+			<result name="waiter">/system/WaiterMakeActivity.jsp</result>
+			<result name="errorInput">/system/Login.jsp</result>
+		</action>
+		
+		<action name="MakeActivity" class="MakeActivityAction">
+			<result name="success">/system/WaiterMadeCheck.jsp</result>
+		</action>
+		
+		<!-- member -->
+		<action name="MemberLogin" class="MemberLoginAction">
+			<result name="success">/member/Home.jsp</result>
+			<result name="erroeInput">/member/Home.jsp</result>
+		</action>	
+		
+		<action name="Register" class="RegisterAction">
+			<result name="success">/member/Home.jsp</result>
+			<result name="erroeInput">/member/Home.jsp</result>
+		</action>			
+	</package>
+	
+	
+</struts>
+

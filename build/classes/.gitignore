@@ -1,0 +1,10 @@
+/action
+/applicationContext.xml
+/dao
+/daoImpl
+/hibernate.cfg.xml
+/model
+/service
+/serviceImpl
+/struts.xml
+/test
